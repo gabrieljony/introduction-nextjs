@@ -1,0 +1,17 @@
+{
+    "categories": [
+        { "id": "camisetas", "title": "Camisetas"},
+        { "id": "calcas", "title": "Calças"}
+    ],
+    "products": [
+        { "id": 1, "title": "Camiseta Front-ends", "price": 79.9, "category_id": "camisetas", "slug": "camiseta-front-ends"},
+        { "id": 2, "title": "Camiseta Back-ends", "price": 59.9, "category_id": "camisetas", "slug": "camiseta-back-ends"},
+        { "id": 3, "title": "Calça preta", "price": 99.9, "category_id": "calcas", "slug": "calca-preta"},
+        { "id": 4, "title": "Calça azul", "price": 69.9, "category_id": "calcas", "slug": "calca-azul"},
+        { "id": 5, "title": "Calça branca", "price": 89.9, "category_id": "calcas", "slug": "calca-branca"}
+    ],
+    "recommended": [
+        { "id": 1, "title": "Camiseta Front-ends", "price": 79.9, "category_id": "camisetas", "slug": "camiseta-front-ends"},
+        { "id": 4, "title": "Calça azul", "price": 69.9, "category_id": "calcas", "slug": "calca-azul"}
+    ]
+}
