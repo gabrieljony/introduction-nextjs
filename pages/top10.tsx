@@ -37,6 +37,6 @@ export const getStaticProps: GetStaticProps<Top10Props> = async (context) => {
         props: {
             products
         },
-        revalidate: 10
+        revalidate: 10 //será atualizado a cada 10 segundos
     }
 }
