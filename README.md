@@ -18,3 +18,9 @@ ghost.org ideal para blog
 strapi.io painel de admin com a interface
 prismic.io para site, website
 contentful
+
+No projeto usado o prismic.io https://prismic.io/dashboard
+Repositorio https://frontcommerce.prismic.io/documents/
+Acessar o custom type - Create new custom type
+- Quais são os tipos de conteudos podemos ter na nossa aplicação
+Repeatable Type
