@@ -1,5 +1,6 @@
 import { Title } from '@/styles/pages/Home';
 import { GetServerSideProps } from 'next';
+import SEO from '@/components/SEO';
 
 interface IProduct {
   id: string;
@@ -19,6 +20,10 @@ export default function Home({ recomendedProducts }: HomeProps) {
 
   return (
     <div>
+      <SEO 
+        title="DevCommerce, your best ecommerce!"
+        image="boost.png"
+        shouldExcludeTitleSuffix/>
       <Title>Hello NextJs!</Title>
 
       <section>
