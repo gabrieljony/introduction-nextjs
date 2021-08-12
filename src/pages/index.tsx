@@ -11,6 +11,8 @@ interface HomeProps {
 
 export default function Home({ recomendedProducts }: HomeProps) {
   async function handleSum(){
+    console.log('process.env.API_UR - Variavel de ambiente restrita', process.env.API_UR)
+    console.log('process.env.NEXT_PUBLIC_API_URL - Variável de ambiente publica', process.env.NEXT_PUBLIC_API_URL)
     const math = (await import('@/lib/math')).default;
     alert(math.sum(3,5));
   }
