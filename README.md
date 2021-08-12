@@ -12,3 +12,9 @@ Rotas dinâmicas
 
 Para usar o json-fake
 npx json-server server-fake.json -p 3333 -w
+
+CMS
+ghost.org ideal para blog
+strapi.io painel de admin com a interface
+prismic.io para site, website
+contentful
