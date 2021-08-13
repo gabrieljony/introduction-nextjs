@@ -51,7 +51,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         Prismic.Predicates.at('document.type', 'category'),
         
     ]);
-    console.log('categories', categories)
+    // console.log('categories', categories)
 
     const paths = categories.results.map(category => {
         return {
