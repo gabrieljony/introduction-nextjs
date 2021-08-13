@@ -19,6 +19,7 @@ export default function Search({ searchResults }: SearchProps) {
   function handleSearch(eventSubmit: FormEvent) {
     eventSubmit.preventDefault(); //evitar o carregamento da tela quando se faz uma busca
 
+    //enviar o usuário para uma outra tela no nextjs
     router.push(
       `/search?q=${encodeURIComponent(search)}`
     )
@@ -28,6 +29,7 @@ export default function Search({ searchResults }: SearchProps) {
 
   return (
     <div>
+      {/* formulário de busca */}
       <form onSubmit={handleSearch}>
         <input type="text" value={search} onChange={e => setSearch(e.target.value)}/>
         <button type="submit">Search</button>
@@ -52,9 +54,11 @@ export default function Search({ searchResults }: SearchProps) {
   )
 }
 
+// a busca server side, o google vai indexar na busca e a url
 export const getServerSideProps: GetServerSideProps<SearchProps> = async (context) => {
   const { q } = context.query;
 
+  // se não tiver parametros, retorna vazio
   if(!q){
     return {
       props: {
